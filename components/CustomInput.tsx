@@ -9,7 +9,7 @@ const formSchema = authFormSchema('sign-up');
 
 // such interfaces can ensure consistency and type safety when working with form inputs codebase
 interface CustomInput {
-    control: Control<z.infer<typeof formSchema>>
+    control: Control<z.infer<typeof formSchema>>,
     name: FieldPath<z.infer<typeof formSchema>>,
     label: string,
     placeholder: string,
