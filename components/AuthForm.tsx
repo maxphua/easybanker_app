@@ -23,6 +23,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form"
+import PlaidLink from './PlaidLink';
 
 //code move to utils.ts, using formSchema
 // const formSchema = z.object({
@@ -98,11 +99,11 @@ const AuthForm = ({type}:{type: string}) => {
                     </h1>
                 </div>
             </header>
-            {user ? (
+            {/* {user ? ( */}
                 <div>
-                    plaidLink
+                    <PlaidLink user={user} variant='primary'/>
                 </div>
-            ) : (
+            {/* ) : ( */}
                 <>
                     <Form {...form}>
                         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -198,8 +199,7 @@ const AuthForm = ({type}:{type: string}) => {
                         </Link>
                     </footer>
                 </>
-            )
-        }
+            {/* )} */}
         </section>       
     )
 }
