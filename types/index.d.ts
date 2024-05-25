@@ -7,8 +7,6 @@ declare type SearchParamProps = {
 
 // ========================================
 
-// add ? to make them optional, exp firstName?: string
-// or remove ? because the data will be there 
 declare type SignUpParams = {
   firstName: string;
   lastName: string;
@@ -62,7 +60,7 @@ declare type Account = {
   type: string;
   subtype: string;
   appwriteItemId: string;
-  sharableId: string;
+  shareableId: string;
 };
 
 declare type Transaction = {
@@ -91,7 +89,7 @@ declare type Bank = {
   accessToken: string;
   fundingSourceUrl: string;
   userId: string;
-  sharableId: string;
+  shareableId: string;
 };
 
 declare type AccountTypes =
